@@ -26,6 +26,7 @@
     <nav class="nav" id="nav">
       <ul>
         <li><a href="#about">ABOUT</a></li>
+        <li><a href="#leader">LEADER</a></li>
         <li><a href="#rule">RULE</a></li>
         <li><a href="#activities">ACTIVITIES</a></li>
         <li><a href="#members">MEMBERS</a></li>
@@ -111,6 +112,69 @@
       <div class="about-image">
         <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=900&q=80" alt="ヒッチハイクの旅">
         <div class="image-caption">— some road, some day</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== LEADER / 団長紹介 ===================== -->
+<section class="section section-leader" id="leader">
+  <style>
+    .section-leader{background:#0e0e0e}
+    .leader-grid{display:grid;grid-template-columns:minmax(0,0.85fr) minmax(0,1.15fr);gap:48px;align-items:center;margin-top:36px}
+    .leader-photo{position:relative}
+    .leader-photo img{width:100%;height:auto;display:block;border-radius:16px;border:1px solid #2a2a2a;box-shadow:0 24px 60px rgba(0,0,0,.5);object-fit:cover}
+    .leader-badge{position:absolute;left:-10px;bottom:18px;background:#ffd400;color:#111;font-weight:900;font-size:.9rem;padding:8px 16px;border-radius:8px;box-shadow:0 8px 20px rgba(0,0,0,.4);letter-spacing:.03em}
+    .leader-name{font-size:2.1rem;font-weight:900;color:#fff;margin:0 0 4px;line-height:1.2}
+    .leader-name small{display:block;font-size:.9rem;color:#ffd400;font-weight:700;margin-top:8px;letter-spacing:.06em}
+    .leader-role{font-size:.95rem;color:#aaa;margin:6px 0 22px}
+    .leader-quote{border-left:4px solid #ffd400;padding:8px 0 8px 20px;margin:0 0 26px;color:#e6e6e6;font-size:1.02rem;line-height:1.95}
+    .leader-quote em{color:#ffd400;font-style:normal;font-weight:700}
+    .leader-facts{display:grid;grid-template-columns:auto 1fr;gap:11px 18px;font-size:.95rem;color:#ccc;margin:0}
+    .leader-facts dt{color:#ffd400;font-weight:700;white-space:nowrap}
+    .leader-facts dd{margin:0}
+    @media(max-width:820px){.leader-grid{grid-template-columns:1fr;gap:28px}.leader-name{font-size:1.7rem}}
+  </style>
+  <div class="container">
+    <div class="section-label light">
+      <span class="num">★</span>
+      <span class="label-en">THE LEADER</span>
+      <span class="label-ja">団長紹介</span>
+    </div>
+
+    <div class="leader-grid">
+      <div class="leader-photo">
+        <img src="images/bucho.jpg" alt="団長 ヒッチャー"
+             onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1494976388531-d1058494cdd8?auto=format&fit=crop&w=900&q=80';">
+        <div class="leader-badge">初代 団長</div>
+      </div>
+
+      <div class="leader-body">
+        <h2 class="leader-name">
+          ヒッチャー
+          <small>HITCHER / 近畿大学ヒッチハイクサークル 初代団長</small>
+        </h2>
+        <p class="leader-role">自称「親指の詩人」。— a man who lives for the thumb (and the girls).</p>
+
+        <blockquote class="leader-quote">
+          人生で大事なものは、2つだけでいい。<br>
+          <em>ヒッチハイク</em>と、<em>女の子の笑顔</em>だ。<br><br>
+          冴えない高校時代を送った俺は、はじめて知らない車に乗せてもらったあの日、人生が変わった。
+          親指1本で、見ず知らずの誰かと心が通じる——こんなにロマンチックなこと、他にあるか？<br><br>
+          正直に言う。最初の動機は「モテたい」、それだけだった。
+          でも気づけば俺は、全47都道府県・累計500台、ヒッチハイクに人生を捧げていた。<br><br>
+          このサークルは、俺が道の上で見つけた“本物の自由”を、君と分かち合うための場所だ。<br>
+          迷ってるなら、まず親指を立てろ。<em>続きは、助手席で話そう。</em>
+        </blockquote>
+
+        <dl class="leader-facts">
+          <dt>団長</dt><dd>ヒッチャー（本名は、道の上で）</dd>
+          <dt>所属</dt><dd>近畿大学 経営学部 4年</dd>
+          <dt>HH歴</dt><dd>5年／累計500台超／全47都道府県 制覇</dd>
+          <dt>座右の銘</dt><dd>「親指は、言葉より雄弁。」</dd>
+          <dt>好きなもの</dt><dd>女の子の笑顔、長距離トラック、SAのソフトクリーム</dd>
+          <dt>苦手なもの</dt><dd>終電、そして「どうせ無理でしょ」の一言</dd>
+        </dl>
       </div>
     </div>
   </div>
@@ -433,7 +497,7 @@
           <dt>参加費</dt>
           <dd>無料（飲食代のみ実費）</dd>
           <dt>条件</dt>
-          <dd>近畿大学の在学生／公共交通機関を使わずに集合できること</dd>
+          <dd>やる気があれば誰でも／公共交通機関を使わずに集合できること</dd>
         </dl>
       </div>
 
@@ -442,7 +506,91 @@
           「来れるか分からない」と思った時点で、たぶん来れる。<br>
           来てしまえば、もう君は仲間だ。
         </p>
-        <a href="#" class="btn btn-yellow btn-lg">新歓エントリーフォーム</a>
+
+        <style>
+          .join-form{background:#121212;border:1px solid #2a2a2a;border-radius:14px;padding:28px 24px;margin:8px 0 22px;box-shadow:0 18px 50px rgba(0,0,0,.35);text-align:left}
+          .join-form .form-title{font-size:1.4rem;font-weight:900;color:#fff;margin:0 0 6px;letter-spacing:.02em}
+          .join-form .form-desc{font-size:.93rem;line-height:1.7;color:#bdbdbd;margin:0 0 20px}
+          .join-form .form-desc strong{color:#ffd400}
+          .join-form .field{margin-bottom:16px}
+          .join-form label{display:block;font-size:1rem;font-weight:700;color:#eee;margin-bottom:6px}
+          .join-form .req{display:inline-block;font-size:.7rem;font-weight:700;color:#111;background:#ffd400;border-radius:4px;padding:1px 7px;margin-left:6px;vertical-align:middle}
+          .join-form input,.join-form select,.join-form textarea{width:100%;box-sizing:border-box;font-size:16px;font-family:inherit;color:#111;background:#fff;border:2px solid #d8d8d8;border-radius:9px;padding:13px 14px;transition:border-color .15s,box-shadow .15s}
+          .join-form input::placeholder,.join-form textarea::placeholder{color:#9a9a9a}
+          .join-form input:focus,.join-form select:focus,.join-form textarea:focus{outline:none;border-color:#ffd400;box-shadow:0 0 0 3px rgba(255,212,0,.25)}
+          .join-form select{appearance:none;-webkit-appearance:none;padding-right:38px}
+          .join-form small{display:block;font-size:.82rem;color:#9a9a9a;margin-top:6px}
+          .join-form .form-submit{width:100%;margin-top:6px;cursor:pointer;border:none;font-size:1.15rem}
+          .join-form .form-submit:disabled{opacity:.6;cursor:default}
+          .join-form .form-status{margin:14px 0 0;font-size:.95rem;font-weight:700;text-align:center;min-height:1.2em}
+          .join-form .form-status.ok{color:#28c76f}
+          .join-form .form-status.err{color:#ff5b5b}
+          @media(max-width:600px){.join-form{padding:22px 16px}}
+        </style>
+
+        <form id="joinForm" class="join-form" novalidate>
+          <h3 class="form-title">団員登録 / 新歓エントリー</h3>
+          <p class="form-desc">
+            下記を入力して登録してください。新歓・イベントのお知らせをお送りします。<br>
+            近大生はもちろん、<strong>他大学・社会人の方（インカレ歓迎）</strong>も大歓迎。
+          </p>
+
+          <div class="field">
+            <label for="f-name">お名前 <span class="req">必須</span></label>
+            <input type="text" id="f-name" name="name" required autocomplete="name" placeholder="例：近大 太郎">
+          </div>
+
+          <div class="field">
+            <label for="f-kana">ふりがな <span class="req">必須</span></label>
+            <input type="text" id="f-kana" name="kana" required placeholder="例：きんだい たろう">
+          </div>
+
+          <div class="field">
+            <label for="f-email">メールアドレス <span class="req">必須</span></label>
+            <input type="email" id="f-email" name="email" required autocomplete="email" placeholder="例：taro@example.com">
+            <small>イベントのお知らせは、こちらにお送りします。</small>
+          </div>
+
+          <div class="field">
+            <label for="f-tel">電話番号（任意）</label>
+            <input type="tel" id="f-tel" name="tel" autocomplete="tel" placeholder="例：090-1234-5678">
+          </div>
+
+          <div class="field">
+            <label for="f-affiliation">ご所属・大学 <span class="req">必須</span></label>
+            <input type="text" id="f-affiliation" name="affiliation" required placeholder="例：近畿大学 経営学部／○○大学／社会人">
+          </div>
+
+          <div class="field">
+            <label for="f-license">運転免許</label>
+            <select id="f-license" name="license">
+              <option value="">選択してください</option>
+              <option value="あり（車を出せる）">あり（自分の車を出せる）</option>
+              <option value="あり（ペーパー）">あり（ペーパードライバー）</option>
+              <option value="なし">なし</option>
+            </select>
+            <small>🚗 いざという時の「サポートカー」要員も大募集中！</small>
+          </div>
+
+          <div class="field">
+            <label for="f-gender">性別（任意）</label>
+            <select id="f-gender" name="gender">
+              <option value="">回答しない</option>
+              <option value="女性">女性</option>
+              <option value="男性">男性</option>
+              <option value="その他">その他</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="f-message">ひとこと（任意）</label>
+            <textarea id="f-message" name="message" rows="3" placeholder="意気込み・質問・なんでもどうぞ"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-yellow btn-lg form-submit">登録する</button>
+          <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
+        </form>
+
         <div class="join-socials">
           <a href="#" aria-label="Instagram" class="social-link">Instagram</a>
           <a href="#" aria-label="X" class="social-link">X (Twitter)</a>
@@ -485,7 +633,7 @@
       </details>
       <details class="faq-item">
         <summary>他大学の人でも入れますか？</summary>
-        <p>原則、近畿大学の在学生限定です。ただし、合同企画やオープン遠足の日は、他大学のゲスト参加もアリ。SNSでチェックしてください。</p>
+        <p>はい、インカレサークルとして他大学・社会人の方も歓迎しています。登録フォームの「ご所属」欄に大学名や「社会人」とご記入ください。合同企画やオープン遠足も随時開催しています。</p>
       </details>
       <details class="faq-item">
         <summary>活動費はどれくらいかかりますか？</summary>
@@ -511,6 +659,7 @@
       <h4>SITE MAP</h4>
       <ul>
         <li><a href="#about">私たちについて</a></li>
+        <li><a href="#leader">団長紹介</a></li>
         <li><a href="#rule">RULE</a></li>
         <li><a href="#activities">活動内容</a></li>
         <li><a href="#members">メンバー</a></li>

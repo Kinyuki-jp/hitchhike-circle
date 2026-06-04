@@ -77,4 +77,46 @@
       window.scrollTo({ top, behavior: 'smooth' });
     });
   });
+
+  // ----- 団員登録フォーム（Google スプレッドシート連携） -----
+  // ↓↓↓ GASのウェブアプリURL（末尾 /exec）。差し替えるのはこの1行だけ ↓↓↓
+  const GAS_ENDPOINT = 'https://script.google.com/macros/s/AKfycbwqXtxjYWIeWzTlbQU1uZoKPFddKm0zqwSPYIAbtRf7-qrJ2jpMgvcic05MUJqxU-IELA/exec';
+  // ↑↑↑ 差し替えるのはこの1行だけ ↑↑↑
+
+  const joinForm = document.getElementById('joinForm');
+  if (joinForm) {
+    const statusEl = document.getElementById('formStatus');
+    joinForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const btn = joinForm.querySelector('.form-submit');
+      const original = btn.textContent;
+
+      if (!GAS_ENDPOINT || GAS_ENDPOINT.indexOf('ここに') !== -1) {
+        statusEl.className = 'form-status err';
+        statusEl.textContent = '現在準備中です。少し待ってから、もう一度お試しください。';
+        return;
+      }
+
+      btn.disabled = true;
+      btn.textContent = '送信中…';
+      statusEl.className = 'form-status';
+      statusEl.textContent = '';
+
+      const payload = new URLSearchParams(new FormData(joinForm));
+      fetch(GAS_ENDPOINT, { method: 'POST', mode: 'no-cors', body: payload })
+        .then(() => {
+          joinForm.reset();
+          statusEl.className = 'form-status ok';
+          statusEl.textContent = '登録を受け付けました！新歓・イベントのお知らせをお送りします。👍';
+        })
+        .catch(() => {
+          statusEl.className = 'form-status err';
+          statusEl.textContent = '送信に失敗しました。時間をおいて、もう一度お試しください。';
+        })
+        .finally(() => {
+          btn.disabled = false;
+          btn.textContent = original;
+        });
+    });
+  }
 })();
