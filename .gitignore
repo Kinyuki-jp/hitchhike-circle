@@ -1,0 +1,7 @@
+# Local preview server config (contains absolute machine paths)
+.claude/
+
+# OS junk
+Thumbs.db
+Desktop.ini
+.DS_Store
