@@ -166,7 +166,7 @@
           土持晟裕
           <small>通称「ヒッチャー」 / 近畿大学ヒッチハイクサークル 初代代表</small>
         </h2>
-        <p class="leader-role">自称「親指の詩人」。— a man who lives for the thumb (and the girls).</p>
+        <p class="leader-role">自称「親指の詩人」。全47都道府県を親指一本で踏破し、累計500台超のドライバーと心を交わしてきた、サークルの生ける伝説。「どこへ行くか」より「誰と出会うか」を信条に、今日もどこかの国道で笑顔の練習をしている。語り出したら止まらないが、その9割は車と恋の話——それでも不思議と人を惹きつけ、彼の助手席にはいつも誰かが座っている。— a man who lives for the thumb (and the girls).</p>
 
         <blockquote class="leader-quote">
           人生で大事なものは、2つだけでいい。<br>
@@ -203,7 +203,7 @@
             山ちゃん
             <small>役職「ピッチャー」 / 近畿大学ヒッチハイクサークル 副代表</small>
           </h2>
-          <p class="leader-role">代表ヒッチャーの右腕。狙った車は、絶対に外さない。— the closer of the open road.</p>
+          <p class="leader-role">代表ヒッチャーの右腕にして、サークルの「安定感」そのもの。狙いを定めた車は絶対に外さない精密なボード捌きと、相手の懐へすっと入る声かけで、乗車成功率はほぼ10割。新人が路上で固まっても、隣に山ちゃんが立つだけで、なぜか車が止まり始める。普段は物静かで多くを語らないが、いざ親指を立てれば誰よりも頼れる——そんな「静かな実力者」。— the closer of the open road.</p>
         </div>
       </div>
     </div>
@@ -221,7 +221,7 @@
             トーマ君
             <small>役職「サブヒッチ」 / 近畿大学ヒッチハイクサークル 幹部・幹事</small>
           </h2>
-          <p class="leader-role">新入りだけど、入って早々ヒッチハイク100台を制覇した新進気鋭の新参者。— が、その実力はもう本物。代表も副代表も認める“持ってる”男。</p>
+          <p class="leader-role">入って早々、わずかな期間でヒッチハイク100台を制覇した新進気鋭の新参者。— が、その実力はもう本物。地図を読む嗅覚と物怖じしない度胸で、ベテランも唸る難ルートを次々に攻略していく。幹事として遠征の段取り・集合場所・タイムスケジュールまで一手に引き受け、気づけばチームはいつも彼の手のひらの上。フットワークと愛嬌で、出会ったドライバーを一瞬でファンに変える——代表も副代表も認める“持ってる”男。</p>
         </div>
       </div>
     </div>
@@ -239,7 +239,7 @@
             さく
             <small>役職「オートヒッチ」 / 近畿大学ヒッチハイクサークル 団員</small>
           </h2>
-          <p class="leader-role">意識してないのに、なぜか彼の前では車が止まる。本人いわく「気づいたら助手席にいた」。— 努力ゼロで結果を出す、天性のヒッチハイカー。</p>
+          <p class="leader-role">意識してないのに、なぜか彼の前では車が止まる。本人いわく「気づいたら助手席にいた」。狙わない、力まない、それなのに乗車率は脅威の数字を叩き出す——理屈では説明できない「天然の引力」を持つ規格外の新人。くせ毛と人懐っこい笑顔につられて、ドライバーもつい窓を開けてしまうらしい。努力ゼロで結果だけが付いてくる、サークル随一の「持って生まれた」ヒッチハイカー。</p>
         </div>
       </div>
     </div>
@@ -508,12 +508,8 @@
     .guide-note{font-size:.84rem;color:#9a9a9a;margin:14px 0 0}
     @media(max-width:820px){.guide-grid{grid-template-columns:1fr;gap:26px}.guide-toc{grid-template-columns:1fr}.guide-body h2{font-size:1.55rem}}
     .guide-video{margin-top:46px;padding-top:38px;border-top:1px solid #2a2a2a;display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:40px;align-items:center}
-    .gv-thumb{position:relative;display:block;border-radius:12px;overflow:hidden;border:1px solid #3a3328;box-shadow:0 20px 50px rgba(0,0,0,.5);transition:transform .15s}
-    .gv-thumb:hover{transform:translateY(-3px)}
-    .gv-thumb img{width:100%;height:auto;display:block;aspect-ratio:16/9;object-fit:cover}
-    .gv-play{position:absolute;inset:0;margin:auto;width:72px;height:72px;display:flex;align-items:center;justify-content:center;background:rgba(255,0,0,.92);border-radius:50%;box-shadow:0 8px 24px rgba(0,0,0,.5)}
-    .gv-play::before{content:'';border-style:solid;border-width:12px 0 12px 21px;border-color:transparent transparent transparent #fff;margin-left:5px}
-    .gv-dur{position:absolute;right:10px;bottom:10px;background:rgba(0,0,0,.8);color:#fff;font-size:.8rem;font-weight:700;padding:2px 8px;border-radius:5px}
+    .gv-embed{position:relative;width:100%;aspect-ratio:16/9;border-radius:12px;overflow:hidden;border:1px solid #3a3328;box-shadow:0 20px 50px rgba(0,0,0,.5);background:#000}
+    .gv-embed iframe{position:absolute;inset:0;width:100%;height:100%;border:0;display:block}
     .gv-body h3{font-size:1.5rem;font-weight:900;color:#fff;margin:0 0 10px;line-height:1.35}
     .gv-body p{color:#cfcccc;font-size:.96rem;line-height:1.85;margin:0 0 20px}
     .gv-cta{display:inline-flex;align-items:center;gap:10px;background:#ff0000;color:#fff;font-weight:900;font-size:1.05rem;text-decoration:none;border-radius:11px;padding:14px 24px;box-shadow:0 12px 28px rgba(255,0,0,.3);transition:transform .12s}
@@ -548,16 +544,14 @@
     </div>
 
     <div class="guide-video">
-      <a class="gv-thumb" href="https://youtu.be/Ht8CbZIJqLw" target="_blank" rel="noopener" aria-label="動画を見る：ヒッチハイク・マスタークラス">
-        <img src="https://img.youtube.com/vi/Ht8CbZIJqLw/maxresdefault.jpg" alt="ヒッチハイク・マスタークラス 動画サムネイル" loading="lazy" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/Ht8CbZIJqLw/hqdefault.jpg';">
-        <span class="gv-play"></span>
-        <span class="gv-dur">9:44</span>
-      </a>
+      <div class="gv-embed">
+        <iframe src="https://www.youtube-nocookie.com/embed/Ht8CbZIJqLw" title="ヒッチハイク・マスタークラス" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
       <div class="gv-body">
         <h3>動画でも学べる。<br>「ヒッチハイク・マスタークラス」</h3>
         <p>テキストより“動き”で掴みたい人へ。約10分で、ヒッチハイクのコツと現場の空気感がまるごと分かる解説動画です。</p>
-        <a class="gv-cta" href="https://youtu.be/Ht8CbZIJqLw" target="_blank" rel="noopener">▶ 動画を見る（YouTube・9:44）</a>
-        <p class="gv-note">タップでYouTubeが開きます。</p>
+        <a class="gv-cta" href="https://youtu.be/Ht8CbZIJqLw" target="_blank" rel="noopener">▶ YouTubeで開く（9:44）</a>
+        <p class="gv-note">この画面でそのまま再生できます。ボタンを押すとYouTubeに切り替わり、フルサイズ・高画質でも視聴できます。</p>
       </div>
     </div>
   </div>
