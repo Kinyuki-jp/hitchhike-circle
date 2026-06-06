@@ -163,6 +163,18 @@
       .leader-facts{grid-template-columns:1fr;gap:2px 0}
       .leader-facts dt{margin-top:10px}
     }
+    .boss-ig{position:relative;display:block;margin:30px 0 2px;padding:26px 22px 24px;border-radius:16px;text-decoration:none;overflow:hidden;background:linear-gradient(135deg,#1c1408,#000 55%,#1c1408);box-shadow:0 18px 50px rgba(0,0,0,.55),0 0 40px rgba(214,41,118,.18);text-align:center}
+    .boss-ig::before{content:'';position:absolute;inset:0;border-radius:16px;padding:2px;background:linear-gradient(135deg,#feda75,#fa7e1e,#d62976,#962fbf,#ffd400);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none}
+    .boss-ig-shine{position:absolute;top:0;left:-60%;width:45%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.38),transparent);transform:skewX(-20deg);animation:bossShine 4s ease-in-out infinite;pointer-events:none}
+    @keyframes bossShine{0%{left:-60%}60%{left:140%}100%{left:140%}}
+    .boss-ig-crown{position:relative;display:block;font-size:1.6rem;line-height:1}
+    .boss-ig-label{position:relative;display:block;font-size:.9rem;font-weight:800;letter-spacing:.06em;color:#ffe27a;margin-top:6px}
+    .boss-ig-handle{position:relative;display:block;font-family:'Anton','Bebas Neue',sans-serif;font-size:2.2rem;line-height:1.1;margin:8px 0 4px;background:linear-gradient(90deg,#feda75,#fff 50%,#feda75);-webkit-background-clip:text;background-clip:text;color:transparent;letter-spacing:.02em}
+    .boss-ig-sub{position:relative;display:block;font-size:.94rem;color:#e9e2cf;font-weight:600;line-height:1.75;margin-bottom:18px}
+    .boss-ig-btn{position:relative;display:inline-block;font-weight:900;font-size:1.02rem;color:#fff;padding:12px 26px;border-radius:999px;background:linear-gradient(95deg,#feda75,#fa7e1e,#d62976,#962fbf,#4f5bd5);box-shadow:0 10px 26px rgba(214,41,118,.45);transition:transform .12s}
+    .boss-ig:hover{box-shadow:0 24px 60px rgba(0,0,0,.6),0 0 60px rgba(214,41,118,.3)}
+    .boss-ig:hover .boss-ig-btn{transform:translateY(-2px)}
+    @media(max-width:480px){.boss-ig-handle{font-size:1.8rem}.boss-ig-sub{font-size:.88rem}}
   </style>
   <div class="container">
     <div class="section-label light">
@@ -204,6 +216,15 @@
           <dt>好きなもの</dt><dd>女の子の笑顔、長距離トラック、SAのソフトクリーム</dd>
           <dt>苦手なもの</dt><dd>終電、そして「どうせ無理でしょ」の一言</dd>
         </dl>
+
+        <a class="boss-ig" href="https://www.instagram.com/tuchi_omochi" target="_blank" rel="noopener" aria-label="代表のInstagramをフォロー @tuchi_omochi">
+          <span class="boss-ig-shine"></span>
+          <span class="boss-ig-crown">👑</span>
+          <span class="boss-ig-label">代表のすべては、ここに詰まっている。</span>
+          <span class="boss-ig-handle">@tuchi_omochi</span>
+          <span class="boss-ig-sub">旅も、出会いも、自由も、夢も——フォローした瞬間、君の人生が動き出す。</span>
+          <span class="boss-ig-btn">✨ Instagramでフォローする ✨</span>
+        </a>
       </div>
     </div>
 
